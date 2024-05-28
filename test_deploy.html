@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
+<body id="body_id">
     <button id="cool_button"> PRESSEN!!! </button>
 </body>
 <script>
-    document.getElementById("cool_button").addEventListener("click", function() {
-        if (document.getElementById("cool_button").style.backgroundColor == "blue") {
-            document.getElementById("cool_button").style.backgroundColor = "green"
+    button = document.getElementById("cool_button")
+    button.addEventListener("click", function() {
+        if (document.getElementById("body_id").style.backgroundColor == "purple") {
+            document.getElementById("body_id").style.backgroundColor = "blue"
         }
         else {
-            document.getElementById("cool_button").style.backgroundColor = "blue"
+            document.getElementById("body_id").style.backgroundColor = "purple"
         }
     })
 </script>
